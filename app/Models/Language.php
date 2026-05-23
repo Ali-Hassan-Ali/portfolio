@@ -16,17 +16,15 @@ class Language extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
-
     protected function imagePath(): Attribute
     {
         if ($this->code == 'ar') {
 
-            $flagPath = asset('admin_assets/images/flags/saudi-arabia.svg');
+            $flagPath = asset('admin_assets/media/flags/saudi-arabia.svg');
 
         } elseif($this->code == 'en') {
             
-            $flagPath = asset('admin_assets/images/flags/united-states.svg');
+            $flagPath = asset('admin_assets/media/flags/united-states.svg');
             
         } else {
 

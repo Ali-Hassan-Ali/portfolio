@@ -9,6 +9,7 @@ use Illuminate\View\Component;
 class Image extends Component
 {
     public function __construct(
+        public string $name  = 'image',
         public string $value = 'admin_assets/media/avatars/300-2.png',
     ){}
 

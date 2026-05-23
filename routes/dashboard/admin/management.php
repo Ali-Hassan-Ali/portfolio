@@ -39,6 +39,7 @@ Route::controller(LanguageController::class)
         Route::post('default', 'changeDefault')->name('default');
         Route::post('status', 'status')->name('status');
         Route::delete('bulk_delete', 'bulkDelete')->name('bulk_delete');
+        Route::post('store', 'storeSortable')->name('sortable.store');
 
         Route::prefix('sortable')->name('sortable.')->group(function () {
 

@@ -68,4 +68,16 @@ return array(
 	'copyright'  => 'Copyright',
 	'all_rights' => 'All Rights Reserved',
 
+    'hero' => [
+        'start_journey' => 'Start Your Journey',
+        'view_cases'    => 'View Case Studies',
+    ],
+
+    'services' => [
+        'title'       => 'Core Strategic Services',
+        'subtitle'    => 'Precision-engineered solutions designed to scale your enterprise',
+        'learn_more'  => 'Learn More',
+        'consult_now' => 'Consult Now',
+    ],
+
 );

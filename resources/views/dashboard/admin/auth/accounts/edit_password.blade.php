@@ -4,7 +4,7 @@
 	
 	<h1 class="text-lg font-semibold mb-2">{{ trans('admin.auth.edit_password') }}</h1>
 
-	<x-dashboard.organization.layout.includes.breadcrumb :breadcrumb='$breadcrumb' />
+	<x-dashboard.admin.layout.includes.breadcrumb :breadcrumb='$breadcrumb' />
 		
 	<div class="grid gap-5 lg:gap-7.5">
 	

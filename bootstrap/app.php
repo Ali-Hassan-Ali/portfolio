@@ -37,19 +37,18 @@ return Application::configure(basePath: dirname(__DIR__))
 
             // Protected
             $configureRoute('dashboard/admin','dashboard.admin.','routes/dashboard/admin/web.php', ['web', 'auth:admin', SetLocale::class]);
-            $configureRoute('dashboard/admin/managements','dashboard.admin.managements.','routes/dashboard/admin/management.php',['web', 'auth:admin', SetLocale::class]);
-            $configureRoute('dashboard/admin/evaluations','dashboard.admin.evaluations.','routes/dashboard/admin/evaluation.php',['web', 'auth:admin', SetLocale::class]);
-            $configureRoute('dashboard/admin/categories','dashboard.admin.categories.','routes/dashboard/admin/category.php',['web', 'auth:admin', SetLocale::class]);
-            $configureRoute('dashboard/admin/institutions','dashboard.admin.institutions.','routes/dashboard/admin/institution.php',['web', 'auth:admin', SetLocale::class]);
+            $configureRoute('dashboard/admin/managements','dashboard.admin.managements.','routes/dashboard/admin/management.php', ['web', 'auth:admin', SetLocale::class]);
+            $configureRoute('dashboard/admin/websites', 'dashboard.admin.websites.', 'routes/dashboard/admin/website.php', ['web', 'auth:admin', SetLocale::class]);
+            $configureRoute('dashboard/admin/settings', 'dashboard.admin.settings.', 'routes/dashboard/admin/setting.php', ['web', 'auth:admin', SetLocale::class]);
 
             // =======================
             // Organization
             // =======================
 
             // Auth (none auth middleware)
-            $configureRoute('dashboard/organization','dashboard.organization.auth.','routes/dashboard/organization/auth.php',['web', SetLocale::class]);
+            //$configureRoute('dashboard/organization','dashboard.organization.auth.','routes/dashboard/organization/auth.php',['web', SetLocale::class]);
             // Protected web.php
-            $configureRoute('dashboard/organization','dashboard.organization.','routes/dashboard/organization/web.php',['web', 'auth:organization', SetLocale::class]);
+            //$configureRoute('dashboard/organization','dashboard.organization.','routes/dashboard/organization/web.php',['web', 'auth:organization', SetLocale::class]);
 
         },
     )->withMiddleware(function (Middleware $middleware): void {

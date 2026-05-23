@@ -10,9 +10,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "codezero/laravel-unique-translation": "*",
+        "laravel-settings/settings": "*",
         "laravel/framework": "^13.0",
         "laravel/tinker": "^3.0",
         "livewire/livewire": "*",
+        "spatie/laravel-translatable": "*",
         "yajra/laravel-datatables-oracle": "*"
     },
     "require-dev": {

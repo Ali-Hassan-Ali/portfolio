@@ -1,6 +1,6 @@
 <div class="kt-image-input" data-kt-image-input="true">
-    <input type="file" accept=".png, .jpg, .jpeg" name="image" />
-    <input type="hidden" name="image" />
+    <input type="file" accept=".png, .jpg, .jpeg" name="{{ $name }}" />
+    <input type="hidden" name="{{ $name }}" />
     <button type="button" data-kt-tooltip="true" data-kt-tooltip-trigger="hover" data-kt-tooltip-placement="right" data-kt-image-input-remove="true" class="kt-image-input-remove">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
             <path d="M18 6 6 18"></path>

@@ -12,12 +12,13 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             AdminSeeder::class,
             LanguageSeeder::class,
-            CategorySeeder::class,
-            InitialEvaluationSeeder::class,
-            SelfEvaluationSeeder::class,
-            SelfEvaluationFileSeeder::class,
-            OrganizationTypeSeeder::class,
-            OrganizationSeeder::class,
+            ServiceSeeder::class,
+            HeroSeeder::class,
+            AboutSeeder::class,
+            WhyUsSeeder::class,
+            CtaSeeder::class,
+            GeneralSeeder::class,
+            MenuSeeder::class,
         ]);
 
     }//end of run

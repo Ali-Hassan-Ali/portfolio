@@ -15,17 +15,13 @@ class SetLocale
             session('dir') ?? session()->put('dir', getLanguages('default')->dir);
             session('code') ?? session()->put('code', getLanguages('default')->code);
 
-            app()->setLocale(session('code') ?? 'ar');
+            app()->setLocale(session('code'));
 
         } else {
 
             app()->setLocale(app()->getLocale());
-            
-        }//en dof check
 
-        app()->setLocale('ar');
-        session()->put('code', 'ar');
-        session()->put('dir', 'RTL');
+        }//en dof check
 
         return $next($request);
 

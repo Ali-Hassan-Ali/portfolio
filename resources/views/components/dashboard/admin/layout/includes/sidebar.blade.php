@@ -28,46 +28,87 @@
                         <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.admins" active="dashboard.admin.managements.admins.*" route="dashboard.admin.managements.admins.index" permission="read-admins"/>
 
                         <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.roles" active="dashboard.admin.managements.roles.*" route="dashboard.admin.managements.roles.index" permission="read-roles"/>
+                        
+                        <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.languages" active="dashboard.admin.managements.languages.*" route="dashboard.admin.managements.languages.index" permission="languages"/>
 
                     </x-dashboard.admin.layout.includes.sidebar.menu-group-item>
 
                 @endif
 
-                @if(permissionAdmin('read-organizations') || permissionAdmin('read-organization_types'))
-                    {{-- organizations --}}
-                    {{--<x-dashboard.admin.layout.includes.sidebar.menu-group-item trans="admin.models.institutions" svg="websites" show="dashboard.admin.institutions.*">
+                @if(permissionAdmin('read-banners') || permissionAdmin('read-clients') || permissionAdmin('read-blogs')
+                    || permissionAdmin('read-galleries')
+                    || permissionAdmin('read-abouts')
+                    || permissionAdmin('read-branches')
+                    || permissionAdmin('read-stats')
+                    )
+                        {{-- websites --}}
 
-                        <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.organizations" active="dashboard.admin.institutions.organizations.*" route="dashboard.admin.institutions.organizations.index" permission="read-organizations"/>
+                        <x-dashboard.admin.layout.includes.sidebar.menu-group-item trans="admin.models.websites" svg="websites" show="dashboard.admin.websites.*">
+                                
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.websites.banner" active="dashboard.admin.websites.banners.*" route="dashboard.admin.websites.banners.index" permission="read-banners"/>--}}
 
-                        <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.organization_types" active="dashboard.admin.institutions.organization_types.*" route="dashboard.admin.institutions.organization_types.index" permission="read-organization_types"/>
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.clients" active="dashboard.admin.websites.clients.*" route="dashboard.admin.websites.clients.index" permission="read-clients"/>--}}
+                            
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.blogs" active="dashboard.admin.websites.blogs.*" route="dashboard.admin.websites.blogs.index" permission="read-blogs"/>--}}
 
-                    </x-dashboard.admin.layout.includes.sidebar.menu-group-item>--}}
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.abouts" active="dashboard.admin.websites.abouts.*" route="dashboard.admin.websites.abouts.index" permission="read-abouts"/>--}}
 
-                @endif
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.branches" active="dashboard.admin.websites.branches.*" route="dashboard.admin.websites.branches.index" permission="read-branches"/>--}}
+                            
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.stats" active="dashboard.admin.websites.stats.*" route="dashboard.admin.websites.stats.index" permission="read-stats"/>--}}
+                            
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.testimonials" active="dashboard.admin.websites.testimonials.*" route="dashboard.admin.websites.testimonials.index" permission="read-testimonials"/>--}}
+                            
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.websites.hero" active="dashboard.admin.websites.hero.*" route="dashboard.admin.websites.hero.index" permission="read-hero"/>
+                            
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.websites.about" active="dashboard.admin.websites.about.*" route="dashboard.admin.websites.about.index" permission="read-about"/>
 
-                @if(permissionAdmin('read-standards') || permissionAdmin('read-fields'))
-                    {{-- categories --}}
-                    {{--<x-dashboard.admin.layout.includes.sidebar.menu-group-item trans="admin.models.categories" svg="categories" show="dashboard.admin.categories.*">
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.services" active="dashboard.admin.websites.services.*" route="dashboard.admin.websites.services.index" permission="read-services"/>
 
-                        <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.standards" active="dashboard.admin.categories.standards.*" route="dashboard.admin.categories.standards.index" permission="read-standards"/>
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.websites.why_us" active="dashboard.admin.websites.why_us.*" route="dashboard.admin.websites.why_us.index" permission="read-why_us"/>
 
-                        <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.models.fields" active="dashboard.admin.categories.fields.*" route="dashboard.admin.categories.fields.index" permission="read-fields"/>
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.websites.cta" active="dashboard.admin.websites.cta.*" route="dashboard.admin.websites.cta.index" permission="read-cta"/>
+                            
+                        </x-dashboard.admin.layout.includes.sidebar.menu-group-item>
 
-                    </x-dashboard.admin.layout.includes.sidebar.menu-group-item>--}}
+                    @endif
 
-                @endif
+                    @if(permissionAdmin('read-settings'))
+                        {{-- settings --}}
 
-                @if(permissionAdmin('read-initial_evaluations') || permissionAdmin('read-self_evaluations') || permissionAdmin('read-languages'))
-                    {{-- evaluations --}}
-                    {{--<x-dashboard.admin.layout.includes.sidebar.menu-group-item trans="admin.models.evaluations" svg="evaluations" show="dashboard.admin.evaluations.*">
+                        <x-dashboard.admin.layout.includes.sidebar.menu-group-item trans="admin.models.settings" svg="settings" show="dashboard.admin.settings.*">
 
-                        <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.evaluations.initial_evaluations.model" active="dashboard.admin.evaluations.initial_evaluations.*" route="dashboard.admin.evaluations.initial_evaluations.index" permission="read-initial_evaluations"/>
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.general" active="dashboard.admin.settings.general.*" route="dashboard.admin.settings.general.index" permission="read-settings"/>
 
-                        <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.evaluations.self_evaluations.model" active="dashboard.admin.evaluations.self_evaluations.*" route="dashboard.admin.evaluations.self_evaluations.index" permission="read-self_evaluations"/>
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.menus" active="dashboard.admin.settings.menus.*" route="dashboard.admin.settings.menus.index" permission="read-menus"/>
+                                
+                            {{--<x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.meta" active="dashboard.admin.settings.meta.*" route="dashboard.admin.settings.meta.index" permission="read-settings"/>
 
-                    </x-dashboard.admin.layout.includes.sidebar.menu-group-item>--}}
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.menus" active="dashboard.admin.settings.menus.*" route="dashboard.admin.settings.menus.index" permission="read-menus"/>
+                            
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.pages" active="dashboard.admin.settings.pages.*" route="dashboard.admin.settings.pages.index" permission="read-pages"/>
 
-                @endif
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.category_banner" active="dashboard.admin.settings.category_banner.*" route="dashboard.admin.settings.category_banner.index" permission="read-settings"/>
+
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.links" active="dashboard.admin.settings.links.*" route="dashboard.admin.settings.links.index" permission="read-links"/>
+
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.websit" active="dashboard.admin.settings.websit.*" route="dashboard.admin.settings.websit.index" permission="read-settings"/>
+
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.videos" active="dashboard.admin.settings.videos.*" route="dashboard.admin.settings.videos.index" permission="read-settings"/>
+                            
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.visions" active="dashboard.admin.settings.visions.*" route="dashboard.admin.settings.visions.index" permission="read-settings"/>
+
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.contact" active="dashboard.admin.settings.contact.*" route="dashboard.admin.settings.contact.index" permission="read-settings"/>
+                            
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.partners" active="dashboard.admin.settings.partner.*" route="dashboard.admin.settings.partner.index" permission="read-settings"/>
+                            
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.titles" active="dashboard.admin.settings.titles.*" route="dashboard.admin.settings.titles.index" permission="read-settings"/>
+                            
+                            <x-dashboard.admin.layout.includes.sidebar.menu-item trans="admin.settings.titles_pages" active="dashboard.admin.settings.titles_pages.*" route="dashboard.admin.settings.titles_pages.index" permission="read-settings"/>--}}
+
+                        </x-dashboard.admin.layout.includes.sidebar.menu-group-item>
+
+                    @endif
 
                 @auth('admin')
 

@@ -2,7 +2,32 @@
 <link href="{{ asset('admin_assets/media/app/favicon-32x32.png') }}" rel="icon" sizes="32x32" type="image/png"/>
 <link href="{{ asset('admin_assets/media/app/favicon-16x16.png') }}" rel="icon" sizes="16x16" type="image/png"/>
 <link href="{{ asset('admin_assets/media/app/favicon.ico') }}" rel="shortcut icon"/>
-<link href="{{ asset('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap') }}" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet"/>
+<style>
+    @font-face {
+        font-family: 'Material Symbols Outlined';
+        font-style: normal;
+        font-weight: 100 700;
+        font-display: block;
+        src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v236/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
+    }
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+</style>
 <link href="{{ asset('admin_assets/vendors/apexcharts/apexcharts.css') }}" rel="stylesheet"/>
 <link href="{{ asset('admin_assets/vendors/keenicons/styles.bundle.css') }}" rel="stylesheet"/>
 <link href="{{ asset('admin_assets/css/styles.css') }}" rel="stylesheet"/>
