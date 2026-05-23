@@ -80,4 +80,26 @@ return array(
         'consult_now' => 'Consult Now',
     ],
 
+    'contact' => [
+        'success'             => 'Your message has been sent successfully!',
+        'appointment_success' => 'Appointment confirmed! We will reach out shortly.',
+        'slot_taken'          => 'This time slot is no longer available. Please choose another.',
+        'tab_rfq'             => 'Request a Quote (RFQ)',
+        'tab_quick'           => 'Quick Contact',
+        'full_name'           => 'Your Full Name',
+        'business_email'      => 'Business Email',
+        'company_name'        => 'Company Name',
+        'activity_type'       => 'Activity Type',
+        'budget_range'        => 'Budget Range (SAR)',
+        'project_scope'       => 'Project Scope & Details',
+        'scope_placeholder'   => 'Briefly describe your requirements...',
+        'privacy_agree'       => 'I agree to the :link and data processing terms.',
+        'privacy_policy'      => 'Privacy Policy',
+        'submit_rfq'          => 'Submit RFQ Portfolio',
+        'send_message'        => 'Send Message',
+        'confirm_appointment' => 'Confirm Appointment',
+        'available_slots'     => 'Available Slots (AST)',
+        'live_schedule'       => 'Live Schedule',
+    ],
+
 );
