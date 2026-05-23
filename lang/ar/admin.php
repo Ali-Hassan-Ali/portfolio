@@ -3,7 +3,7 @@
 return array(
 
       'global' => array(
-            'app_name'    => 'منصة اثر',
+            'app_name'    => 'دجي يزنز',
             'dashboard'   => 'لوحة التحكم',
             'home'        => 'الرئيسية',
             'yes'         => '😊 نعم',

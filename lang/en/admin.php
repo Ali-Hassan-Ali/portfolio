@@ -2,7 +2,7 @@
 
 return array('global' => 
             array(
-                'app_name'    => 'Athar platform', 
+                'app_name'    => 'digi-business platform', 
                 'dashboard'   => 'Dashboard', 
                 'home'        => 'Home', 
                 'yes'         => '😊Yes',
