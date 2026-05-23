@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep -l \"sortable\\\\|alpine\")",
+      "Bash(xargs grep -l \"Sortable\\\\|alpine\")",
+      "Bash(xargs grep -l \"KTSortable\\\\|data-kt-sortable\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Read(//c/Users/Ali Hassn/Downloads/Compressed/stitch_remix_of_digi_business_client_portal_dashboard/stitch_remix_of_digi_business_client_portal_dashboard/contacts/**)"
+    ]
+  }
+}
